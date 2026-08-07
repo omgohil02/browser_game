@@ -3,69 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Browser Arcade Hub</title>
-  <style>
-    body {
+  <title>Infinite Neon Shooter</title>
+<style>
+    body, html {
       margin: 0;
       padding: 0;
-      background-color: #0f0f13;
-      color: #ffffff;
-      font-family: monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      background-color: #0d0d12;
+      overflow: hidden;
+      width: 100vw;
       height: 100vh;
     }
-    h1 {
-      color: #ff4757;
-      text-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
-      margin-bottom: 10px;
-    }
-    p {
-      color: #aaaaaa;
-      margin-bottom: 30px;
-    }
-    .game-list {
-      display: flex;
-      gap: 20px;
-    }
-    .game-card {
-      background: #1e1e24;
-      border: 2px solid #2f3542;
-      padding: 20px 30px;
-      border-radius: 8px;
-      text-align: center;
-      transition: 0.2s;
-    }
-    .game-card:hover {
-      border-color: #00d2d3;
-      box-shadow: 0 0 15px rgba(0, 210, 211, 0.3);
-      transform: translateY(-3px);
-    }
-    .game-card a {
-      color: #2ed573;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
+    canvas {
       display: block;
-      margin-top: 10px;
+      background-color: #1a1a24;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
 <body>
-
-  <h1>BROWSER ARCADE HUB</h1>
-  <p>Select a game to launch:</p>
-
-  <div class="game-list">
-    <div class="game-card">
-      <h3>Cyber Survivor</h3>
-      <p style="font-size: 12px; margin: 5px 0 15px 0;">Top-down survival shooter</p>
-      <a href="Neon Shooter/NeonShooter.html">PLAY ▶</a>
-    </div>
-    <!-- Future games can easily be added here as new cards -->
-  </div>
-
+  <canvas id="gameCanvas"></canvas>
+  <script src="NeonShooter.js"></script>
 </body>
 </html>
